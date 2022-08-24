@@ -1,0 +1,38 @@
+.example-tel-input-container {
+  display: flex;
+}
+
+.example-tel-input-element {
+  border: 1px solid green;
+  background: none;
+  padding: 0;
+  outline: none;
+  font: inherit;
+  text-align: center;
+}
+
+.example-tel-input-spacer {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+:host.example-floating .example-tel-input-spacer {
+  opacity: 1;
+}
+
+
+#single-digit-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.digit-input {
+  border-color: currentColor;
+  border-radius: 4px;
+  border-style: ridge;
+  font-size: xx-large;
+  height: 3rem;
+  margin-right: 1rem;
+  text-align: center;
+  width: 2rem;
+}
